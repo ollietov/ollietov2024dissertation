@@ -106,9 +106,8 @@ def load_music_data(data_dir):
     return note_list, sequences
 
 
-# data_dir = "C:\\Users\\Ollie\\Desktop\\pieces dataset test"
-data_dir = "C:\\Users\\Ollie\\Desktop\\GRADED PIECES DATASET"
-#data_dir = "data\\custom" 
+
+data_dir = "GRADED PIECES DATASET"
 
 # music_data, sequences = load_music_data(data_dir)
 # pickle.dump(music_data, open('full_music_data.p', 'wb'))
@@ -573,7 +572,7 @@ import random
 def seed_request(grade):
     #request random seed based on grade
     requested_grade = str(grade)
-    base_folder_path = "C:\\Users\\Ollie\\Desktop\\GRADED PIECES DATASET"
+    base_folder_path = "GRADED PIECES DATASET"
     grade_folder_path = os.path.join(base_folder_path, requested_grade)
     midi_files = [file for file in os.listdir(grade_folder_path)]
     random_file = random.choice(midi_files)
